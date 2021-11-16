@@ -141,3 +141,57 @@ footer {
     background-color: #24c7c487;
 }
 
+
+.none {
+    display: none;
+}
+
+.fix {
+    background-color: #24c7c5;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    height: 50%;
+}
+
+
+
+/* animations */
+
+.text-pop {
+    animation: myAnima 1s cubic-bezier(0.11, 0, 0.6, 0.3) 1s 1 alternate forwards;
+}
+
+.pulse {
+    animation: myAnim 2s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 alternate forwards;
+}
+
+@keyframes myAnima {
+    0% {
+      transform: scale(0.5);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes myAnim {
+    0% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+      transform-origin: center center;
+    }
+  
+  
+    17% {
+      animation-timing-function: ease-out;
+      transform: scale(1.1);
+    }
+  
+  
+    45% {
+      animation-timing-function: ease-in;
+      transform: scale(1);
+    }
+  }
